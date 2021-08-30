@@ -8,7 +8,7 @@ Erasmus DEPEND - M2 MFLS - University of Lorrain - master's project
 
 
 This project is part of Loria project NoozyAI, 
-which takes video metadata in a stated format (from a Redis repository), take xAPI statements from the VoD portal and generates Conten Based Recommendation for users. And stores the recommendation into Redis repository.
+which takes video metadata in a stated format (from a Redis repository), take xAPI statements from the VoD portal and generates Content Based Recommendation for users. And stores the recommendation into Redis repository.
 
 
 *The application is under GNU LGPL3 Licence, developed by Asif Ahmed with Dr. Azim Rousanally, Olfa Messaoud in Loria Lab, Nancy, France.*
