@@ -1,0 +1,29 @@
+input:
+  description:
+    - "algorithm_id: required"
+    - "n: required"
+    - "user_id_requirement: 'optional'(default)"
+    - "video_id_requirement: 'required' / 'optional' / 'not required' (default)"
+    - "type: 'Basic' = 'DescriptionBased', 'KeywordBased' = 'ThematicBased' and 'Hybrid' = 'DescriptionBased' + 'ThematicBased' "
+    - "dependant_data_parameters - a list of needed parameters for analysis (required)"
+  # name of the algorithm module (.src/algorithm/CB_ItemBased.py)
+  algorithm_id : "CB_UserBased"
+  algorithm_type: "Basic"
+  n: 25
+  user_id_requirement: "optional"
+  # video_id input - only required for content based / item based algorithm
+  video_id_requirement: "not_required"
+  # dependant_data_parameters (eg. 'dc:description' OR 'dc:available' ) 'dc:identifier' - default
+
+  dependant_data_parameters : ['dc:identifier', 'dc:title', 'dc:description', 'dc:type', 'dc:subject', 'dc:available', 'dc:source.title']
+
+  date_range_dependency: "False"
+  date_range_before: 30
+  date_range_after: 30
+  start_from :
+    day: 1
+    month: 1
+    year: 2021
+
+
+
